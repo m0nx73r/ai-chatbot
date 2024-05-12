@@ -30,7 +30,7 @@ def create_chain(system_prompt):
     # LLM and take some action on it. Here we are giving it our custom
     # stream handler to make it appear that the LLM is typing the
     # responses in real-time.
-    # callback_manager = CallbackManager([stream_handler])
+    callback_manager = CallbackManager([stream_handler])
 
     (repo_id, model_file_name) = ("TheBloke/Mistral-7B-Instruct-v0.1-GGUF",
                                   "mistral-7b-instruct-v0.1.Q4_0.gguf")
@@ -47,10 +47,10 @@ def create_chain(system_prompt):
             model_path=model_path,
             temperature=0,
             max_tokens=4096,
-            top_p=3,
+            top_p=2,
             # callback_manager=callback_manager,
-            # n_gpu_layers=1,
-            # n_batch=512,
+            n_gpu_layers=20,
+            n_batch=512,
             n_ctx=4096,
             stop=["[INST]"],
             verbose=False,
