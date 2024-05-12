@@ -46,8 +46,8 @@ def create_chain(system_prompt):
     llm = LlamaCpp(
             model_path=model_path,
             temperature=0,
-            max_tokens=512,
-            top_p=1,
+            max_tokens=4096,
+            top_p=3,
             # callback_manager=callback_manager,
             # n_gpu_layers=1,
             # n_batch=512,
