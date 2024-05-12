@@ -1,7 +1,7 @@
 import streamlit as st
 from langchain_community.llms import LlamaCpp
 from langchain.prompts import PromptTemplate
-# from langchain.callbacks.manager import CallbackManager
+from langchain.callbacks.manager import CallbackManager
 from langchain.callbacks.base import BaseCallbackHandler
 from huggingface_hub import hf_hub_download
 
