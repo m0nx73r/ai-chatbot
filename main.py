@@ -51,7 +51,7 @@ def create_chain(system_prompt):
             # callback_manager=callback_manager,
             # n_gpu_layers=1,
             # n_batch=512,
-            # n_ctx=4096,
+            n_ctx=4096,
             stop=["[INST]"],
             verbose=False,
             streaming=True,
