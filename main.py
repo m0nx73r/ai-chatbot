@@ -49,7 +49,6 @@ def create_chain(system_prompt):
             n_gpu_layers=28, n_threads=6, n_batch=521,
             top_p=2,
             callback_manager=callback_manager,
-            n_gpu_layers=-1,
             n_ctx=4096,
             stop=["[INST]"],
             verbose=False,
