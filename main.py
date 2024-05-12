@@ -24,7 +24,7 @@ def create_chain(system_prompt):
     # A stream handler to direct streaming output on the chat screen.
     # This will need to be handled somewhat differently.
     # But it demonstrates what potential it carries.
-    # stream_handler = StreamHandler(st.empty())
+    stream_handler = StreamHandler(st.empty())
 
     # Callback manager is a way to intercept streaming output from the
     # LLM and take some action on it. Here we are giving it our custom
