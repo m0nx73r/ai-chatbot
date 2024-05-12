@@ -49,7 +49,7 @@ def create_chain(system_prompt):
             max_tokens=4096,
             top_p=2,
             # callback_manager=callback_manager,
-            n_gpu_layers=20,
+            n_gpu_layers=32,
             n_batch=512,
             n_ctx=4096,
             stop=["[INST]"],
